@@ -1,7 +1,6 @@
-import DestinationBody from './HomeBody/DestinationBody';
-import HomeBody from './HomeBody/HomeBody';
-// import NavBar from './NavBar/NavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomeView from './Components/Home/HomeView';
+import DestinationView from './Components/Destination/DestinationView';
 
 const App = () => {
   return (
@@ -13,12 +12,12 @@ const App = () => {
             <Routes>
               <Route
                 path="/"
-                element={<HomeBody />}
+                element={<HomeView />}
               />
 
               <Route
                 path="/destination"
-                element={<DestinationBody />}
+                element={<DestinationView />}
               />
             </Routes>
           </BrowserRouter>
