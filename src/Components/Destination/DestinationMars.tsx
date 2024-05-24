@@ -38,7 +38,7 @@ interface Data {
 
 const data: Data = dataJson;
 
-const destinationData = data.destinations[1];
+const destinationData = data.destinations[2];
 
 const DestinationMars = () => {
   return (
@@ -46,15 +46,16 @@ const DestinationMars = () => {
       <section className="mx-7 translate-y-[8rem] pb-[3rem]">
         <article className="flex flex-col items-center justify-center gap-[3rem]">
           <h1 className="text-[16px] uppercase tracking-[2px] flex gap-6">
-            <span className=" opacity-25">01</span> Pick your Destination
+            <span className=" opacity-25">01</span> Pick your Destination of a
+            thing
           </h1>
 
           <div className="flex flex-col items-center gap-[2rem]">
-            <figure>
+            <figure className="h-[180px] w-[180px] ">
               <img
                 src={destinationData.images.png}
                 alt={'item.description'}
-                className="h-[170px]"
+                className="h-[170px] w-[170px] animate-bounce"
               />
             </figure>
             <ul className="flex gap-[1.5rem] tracking-[2.1px] item-center justify-center">

@@ -1,5 +1,5 @@
 // import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenu } from 'react-icons/hi';
 import { IoCloseSharp } from 'react-icons/io5';
@@ -20,12 +20,30 @@ type Open = boolean;
 
 const HomeNav = () => {
   const [isOpen, setIsOpen] = useState<Open>(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleNavToggle = (): void => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setIsScrolled(scrollY >= 50);
+      setIsOpen(false);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isScrolled]);
   return (
-    <header className="fixed top-0 w-full z-10 ">
+    <header
+      className={`fixed top-0 w-full z-10 ${
+        isScrolled
+          ? ` bg-[url('/assets/home/background-home-mobile.jpg')] bg-fixed d bg-cover shadow-lg transition-all duration-300`
+          : ''
+      }`}
+    >
       <nav className="flex items-center justify-between mx-5 h-[4rem] mt-5">
         <span>
           <img
