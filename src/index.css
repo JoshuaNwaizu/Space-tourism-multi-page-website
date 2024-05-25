@@ -8,32 +8,43 @@
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
-
-  /* color-scheme: light dark; */
  
 }
 
 *{
   box-sizing: border-box;
   margin: 0;
+  padding:0 ;
 
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body {
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  /* background-image: url('/assets/images/home/background-home-mobile.jpg'); */
-  /* background-repeat: no-repeat; */
-  /* background-position: center ; */
   /* --second-font: "Bellefair", serif; */
-  /* background-size: cover ; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
 }
-html{
-  scroll-behavior: smooth;
+
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-up-down {
+  animation: move-up-down 2s ease-in-out infinite; 
 }

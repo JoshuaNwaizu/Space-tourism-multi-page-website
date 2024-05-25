@@ -39,7 +39,8 @@ interface Data {
 }
 
 type Digit = number;
-const data: Data = dataJson;
+
+export const data: Data = dataJson;
 
 const DestinationBody = () => {
   const [step, setStep] = useState<Digit>(0);
@@ -54,7 +55,7 @@ const DestinationBody = () => {
       <section className="mx-7 translate-y-[8rem] mb-[-10rem]">
         <article className="flex flex-col items-center justify-center gap-[3rem]">
           <h1 className="text-[16px] uppercase tracking-[2px] flex gap-3 items-center justify-center ">
-            <span className=" opacity-35">01</span> Pick your Destination
+            <span className=" opacity-35">01</span> Pick your Destinations
           </h1>
 
           <div className="flex flex-col items-center gap-[2rem]">
@@ -62,7 +63,7 @@ const DestinationBody = () => {
               <img
                 src={destinationData.images.png}
                 alt={'item.description'}
-                className="h-[170px] animate-pulse "
+                className="h-[170px]  animate-up-down "
               />
             </figure>
             <ul className="flex gap-[1.5rem] tracking-[2.1px] item-center justify-center">
