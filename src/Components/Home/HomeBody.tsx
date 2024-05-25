@@ -21,7 +21,7 @@ const HomeBody = () => {
           </div>
           <div className="flex items-center justify-center">
             <Link to={'destination'}>
-              <span className="bg-[#fff] w-[9.5rem] h-[9.5rem] flex items-center justify-center font-[Bellefair] rounded-full text-[18px] tracking-[2px] text-[#0B0D17] uppercase">
+              <span className="bg-[#fff] w-[9.5rem] h-[9.5rem] flex items-center justify-center font-[Bellefair] rounded-full text-[18px] tracking-[2px] text-[#0B0D17] uppercase animate-up-down">
                 Explore
               </span>
             </Link>

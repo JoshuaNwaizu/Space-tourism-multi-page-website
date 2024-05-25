@@ -44,7 +44,7 @@ const CrewNav = () => {
           : ''
       }`}
     >
-      <nav className="flex items-center justify-between mx-5 h-[4rem] mt-5">
+      <nav className="flex items-center justify-between mx-5 h-[4rem] my-3">
         <span>
           <img
             src="/assets/shared/logo.svg"
