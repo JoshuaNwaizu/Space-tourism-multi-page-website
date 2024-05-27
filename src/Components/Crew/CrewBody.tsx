@@ -14,7 +14,7 @@ const CrewBody = () => {
   };
 
   return (
-    <main className="bg-[url('/assets/crew/background-crew-mobile.jpg')]  bg-cover bg-fixed h-[54rem]">
+    <main className="bg-[url('/assets/crew/background-crew-mobile.jpg')]  bg-cover bg-fixed h-[55rem]">
       <section className="mx-7 translate-y-[8rem] mb-[-10rem]">
         <article className="flex flex-col items-center gap-[4rem]">
           <h1 className="text-[16px] tracking-[2px] flex gap-3 items-center justify-center">
@@ -50,13 +50,14 @@ const CrewBody = () => {
                 ></div>
               ))}
             </div>
-            <figure className=" py-2 border-none rounded-full backdrop-blur-[2px] flex items-center justify-center w-[290px] h-[340px]">
+            <figure className=" py-2 border-none rounded-full backdrop-blur-[2px] flex items-center justify-center w-[290px] h-[340px] shadow-blue-300 ">
               <img
                 src={crewData.images.png}
                 alt={crewData.name}
-                className=" w-[280px] h-[340px] rounded-b-[20%] backdrop-blur-[2px] "
+                className=" w-[274px] h-[340px] backdrop-blur-[2px] flex-shrink-0 shadow-blue-300"
               />
             </figure>
+            {/* <div className="w-[150px] h-[30px] bg-[#030312] blur-[15px] absolute left-[4.5rem] right-0 bottom-[-.75rem]"></div> */}
           </div>
         </article>
       </section>

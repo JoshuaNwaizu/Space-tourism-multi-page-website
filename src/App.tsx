@@ -14,16 +14,37 @@ const App = () => {
             <Routes>
               <Route
                 path="/"
-                element={<HomeView />}
+                element={
+                  <HomeView
+                    home="/"
+                    destination="destination"
+                    crew="crew"
+                    technology="technology"
+                  />
+                }
               />
 
               <Route
                 path="/destination"
-                element={<DestinationView />}
+                element={
+                  <DestinationView
+                    home="/"
+                    destination=""
+                    crew="crew"
+                    technology="technology"
+                  />
+                }
               />
               <Route
                 path="/crew"
-                element={<CrewView />}
+                element={
+                  <CrewView
+                    home="/"
+                    destination="destination"
+                    crew=""
+                    technology="technology"
+                  />
+                }
               />
             </Routes>
           </BrowserRouter>

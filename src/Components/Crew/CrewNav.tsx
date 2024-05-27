@@ -7,6 +7,7 @@ import { IoCloseSharp } from 'react-icons/io5';
 interface NavigationItem {
   label: string;
   path: string;
+  //   border: boolean;
 }
 
 const navList: NavigationItem[] = [
@@ -70,7 +71,9 @@ const CrewNav = () => {
                   to={list.path}
                   key={list.label}
                 >
-                  <li>{list.label}</li>
+                  <li className=" border-r-[7px] border-red-50">
+                    {list.label}
+                  </li>
                 </Link>
               </>
             ))}
