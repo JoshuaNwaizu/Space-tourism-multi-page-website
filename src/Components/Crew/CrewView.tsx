@@ -8,6 +8,7 @@ interface NavItems {
   destination: string;
   crew: string;
   technology: string;
+  image: string;
   // routings: string;
 }
 
@@ -20,7 +21,7 @@ const CrewView: React.FC<NavItems> = () => {
         destination="destination"
         crew="crew"
         technology="technology"
-        index={2}
+        image="/assets/crew/background-crew-mobile.jpg"
       />
       <CrewBody />
     </>

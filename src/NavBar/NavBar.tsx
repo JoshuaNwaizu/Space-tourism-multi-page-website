@@ -12,7 +12,7 @@ interface NavItems {
   destination: string;
   crew: string;
   technology: string;
-  index: number;
+  image: string;
 }
 
 interface NavigationItem {
@@ -25,11 +25,13 @@ const NavBar: React.FC<NavItems> = ({
   destination,
   crew,
   technology,
-  index,
+  image,
 }) => {
   const [isOpen, setIsOpen] = useState<Open>(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [navPag, setNavPag] = useState<Nav>(0);
+
+  // const bg = isScrolled ? image: ''
 
   const handleNavPag = (num: Nav) => {
     setNavPag(num);
@@ -52,7 +54,7 @@ const NavBar: React.FC<NavItems> = ({
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setIsScrolled(scrollY >= 50);
+      setIsScrolled(scrollY >= 30);
       setIsOpen(false);
     };
     window.addEventListener('scroll', handleScroll);
@@ -68,10 +70,11 @@ const NavBar: React.FC<NavItems> = ({
           : ''
       } `}
       style={{
-        backgroundColor: `${isScrolled ? 'red' : ''}`,
+        // backgroundColor: `${isScrolled ? 'red' : ''}`,
+        backgroundImage: `url(${isScrolled ? image : ''})`,
       }}
     >
-      <nav className="flex items-center justify-between mx-5 h-[4rem] my-3">
+      <nav className="flex items-center justify-between mx-7 h-[4rem] my-4">
         <span>
           <img
             src="/assets/shared/logo.svg"
@@ -99,29 +102,12 @@ const NavBar: React.FC<NavItems> = ({
               >
                 {' '}
                 <li
-                  className={`${
-                    navPag === index ? 'border-r-4 border-white' : ''
-                  }`}
+                  className={`${navPag === 1 ? 'border-r-4 border-white' : ''}`}
                 >
                   {item.label}
                 </li>
               </Link>
             ))}
-            {/* <Link to={home}>
-              {' '}
-              <li> 00 Home</li>
-            </Link>
-
-            <Link to={`/${destination}`}>
-              <li> 01 Destination</li>
-            </Link>
-
-            <Link to={`/${crew}`}>
-              <li> 02 Crew</li>
-            </Link>
-            <Link to={`/${technology}`}>
-              <li> 03 Technology</li>
-            </Link> */}
           </ul>
         </div>
 

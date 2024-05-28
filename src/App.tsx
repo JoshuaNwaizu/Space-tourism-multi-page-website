@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomeView from './Components/Home/HomeView';
 import DestinationView from './Components/Destination/DestinationView';
 import CrewView from './Components/Crew/CrewView';
+import TechnologyView from './Components/Technology/TechnologyView';
 // import DestinationMars from './Components/Destination/DestinationMars';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
                     destination="destination"
                     crew="crew"
                     technology="technology"
+                    image=""
                   />
                 }
               />
@@ -32,6 +34,7 @@ const App = () => {
                     destination=""
                     crew="crew"
                     technology="technology"
+                    image=""
                   />
                 }
               />
@@ -43,6 +46,19 @@ const App = () => {
                     destination="destination"
                     crew=""
                     technology="technology"
+                    image=""
+                  />
+                }
+              />
+              <Route
+                path="/technology"
+                element={
+                  <TechnologyView
+                    home="/"
+                    destination="destination"
+                    crew="crew"
+                    technology=""
+                    image=""
                   />
                 }
               />

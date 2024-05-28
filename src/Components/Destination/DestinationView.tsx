@@ -10,7 +10,7 @@ interface NavItems {
   destination: string;
   crew: string;
   technology: string;
-  // routings: string;
+  image: string;
 }
 
 const DestinationView: React.FC<NavItems> = () => {
@@ -22,7 +22,7 @@ const DestinationView: React.FC<NavItems> = () => {
         destination="destination"
         crew="crew"
         technology="technology"
-        index={1}
+        image="/assets/destination/background-destination-mobile.jpg"
       />
       <DestinationBody />
     </>
