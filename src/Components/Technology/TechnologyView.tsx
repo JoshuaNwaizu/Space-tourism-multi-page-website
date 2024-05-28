@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../../NavBar/NavBar';
+import TechnologyBody from './TechnologyBody';
 
 interface NavItems {
   home: string;
@@ -19,7 +20,7 @@ const TechnologyView: React.FC<NavItems> = () => {
         technology="technology"
         image="/assets/home/background-home-mobile.jpg"
       />
-      TechnologyBody
+      <TechnologyBody />
     </div>
   );
 };
