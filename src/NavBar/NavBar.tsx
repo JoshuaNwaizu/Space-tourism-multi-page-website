@@ -69,16 +69,18 @@ const NavBar: React.FC<NavItems> = ({
         backgroundImage: `url( ${image} )`,
       }}
     >
-      <nav className="flex items-center justify-between mx-6 h-[3rem] my-4">
-        <span>
+      <nav className="flex items-center justify-between mx-6 h-[3rem] max-[765px]:my-4 min-[1100px]:translate-y-[4rem] ">
+        <span className="min-[1100px]:translate-x-11">
           <img
             src="/assets/shared/logo.svg"
             alt=" Space Logo"
           />
         </span>
-
+        <span className="max-[1099px]:hidden w-[35%] h-[1px] bg-[white] translate-x-[5rem] z-10 opacity-25">
+          {' '}
+        </span>
         <div
-          className={` max-[765px]:absolute max-[765px]:top-0 max-[765px]:backdrop-blur-[40px] max-[765px]: w-[70%] max-[765px]:h-screen max-[765px]:transition-all max-[765px]:duration-300  min-[768px]:py-[2rem] min-[768px]:-mr-6 min-[768px]:w-[85%] min-[768px]:flex min-[768px]:items-center min-[768px]:justify-center min-[768px]:bg-[#FFFFFF0C] min-[768px]:backdrop-blur-[20px] ${
+          className={` max-[765px]:absolute max-[765px]:top-0 max-[765px]:backdrop-blur-[40px] max-[765px]: w-[70%] max-[765px]:h-screen max-[765px]:transition-all max-[765px]:duration-300  min-[768px]:py-[2rem] min-[768px]:-mr-6 min-[768px]:w-[85%] min-[768px]:flex min-[768px]:items-center min-[768px]:justify-center min-[768px]:bg-[#FFFFFF0C] min-[768px]:backdrop-blur-[20px] min-[1100px]:w-[60%] ${
             isOpen ? 'right-0 ' : 'right-[-100%]'
           } `}
         >
