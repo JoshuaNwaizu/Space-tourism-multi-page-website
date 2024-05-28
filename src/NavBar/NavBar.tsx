@@ -78,17 +78,17 @@ const NavBar: React.FC<NavItems> = ({
         </span>
 
         <div
-          className={` absolute top-0 backdrop-blur-[40px]  w-[70%] h-screen transition-all duration-300  ${
+          className={` max-[765px]:absolute max-[765px]:top-0 max-[765px]:backdrop-blur-[40px] max-[765px]: w-[70%] max-[765px]:h-screen max-[765px]:transition-all max-[765px]:duration-300  min-[768px]:py-[2rem] min-[768px]:-mr-6 min-[768px]:w-[85%] min-[768px]:flex min-[768px]:items-center min-[768px]:justify-center min-[768px]:bg-[#FFFFFF0C] min-[768px]:backdrop-blur-[20px] ${
             isOpen ? 'right-0 ' : 'right-[-100%]'
           } `}
         >
           <span
-            className="text-[2.5rem] relative top-[2.1rem] left-[13rem] text-[#D0D6F9]"
+            className="text-[2.5rem] relative top-[2.1rem] left-[13rem] text-[rgb(208,214,249)] min-[768px]:hidden"
             onClick={handleNavToggle}
           >
             <IoCloseSharp />
           </span>
-          <ul className="flex flex-col gap-8 justify-center translate-y-[8rem] ml-[3rem] tracking-[2px] text-[#fff]">
+          <ul className="flex max-[765px]:flex-col max-[765px]:gap-8 max-[765px]:justify-center max-[765px]:translate-y-[8rem] max-[765px]:ml-[3rem] tracking-[2px] text-[#b1a3a3] min-[768px]:gap-[3rem]">
             {navList.map((item, i) => (
               <Link
                 to={`/${item.path}`}
@@ -97,7 +97,9 @@ const NavBar: React.FC<NavItems> = ({
               >
                 {' '}
                 <li
-                  className={`${navPag === 1 ? 'border-r-4 border-white' : ''}`}
+                  className={`text-[#fff] ${
+                    navPag === 1 ? 'border-r-4 border-white' : ''
+                  }`}
                 >
                   {item.label}
                 </li>
@@ -107,7 +109,9 @@ const NavBar: React.FC<NavItems> = ({
         </div>
 
         <span
-          className={`text-[2.5rem] text-[#D0D6F9] ${isOpen ? 'hidden' : null}`}
+          className={`text-[2.5rem] min-[765px]:hidden text-[#D0D6F9] ${
+            isOpen ? 'hidden' : null
+          } `}
           onClick={handleNavToggle}
         >
           <HiMenu />

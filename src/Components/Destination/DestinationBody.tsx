@@ -50,7 +50,7 @@ const DestinationBody = () => {
   };
 
   return (
-    <main className=" bg-[url('/assets/destination/background-destination-mobile.jpg')]  bg-cover bg-fixed h-screen overflow-y-scroll scroll-smooth">
+    <main className=" bg-[url('/assets/destination/background-destination-mobile.jpg')]  bg-cover bg-fixed h-[60rem] ">
       <section className="mx-7 translate-y-[8rem] mb-[-10rem]">
         <article className="flex flex-col items-center justify-center gap-[3rem]">
           <h1 className="text-[16px] uppercase tracking-[2px] flex gap-3 items-center justify-center ">

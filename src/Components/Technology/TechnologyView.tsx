@@ -18,7 +18,7 @@ const TechnologyView: React.FC<NavItems> = () => {
         destination="destination"
         crew="crew"
         technology="technology"
-        image="/assets/home/background-home-mobile.jpg"
+        image="/assets/technology/background-technology-mobile.jpg"
       />
       <TechnologyBody />
     </div>
