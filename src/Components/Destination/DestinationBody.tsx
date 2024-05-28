@@ -1,7 +1,6 @@
 // import { Link } from 'react-router-dom';
-import dataJson from '/home/joshua-nwaizu/Documents/Space Tourism multi-page/src/data.json';
+import dataJson from '../data.json';
 import { useState } from 'react';
-// import { useState } from 'react';
 
 interface Image {
   png: string;
