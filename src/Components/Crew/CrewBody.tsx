@@ -14,8 +14,8 @@ const CrewBody = () => {
   };
 
   return (
-    <main className="bg-[url('/assets/crew/background-crew-mobile.jpg')]  bg-cover bg-fixed h-screen overflow-y-scroll">
-      <section className="mx-7 translate-y-[8rem] mb-[-10rem]">
+    <main className="bg-[url('/assets/crew/background-crew-mobile.jpg')]  bg-cover bg-fixed h-screen overflow-y-scroll scroll-smooth">
+      <section className="mx-7 translate-y-[8rem]">
         <article className="flex flex-col items-center gap-[4rem]">
           <h1 className="text-[16px] tracking-[2px] flex gap-3 items-center justify-center">
             <span className="opacity-35">02</span>MEET YOUR CREW
