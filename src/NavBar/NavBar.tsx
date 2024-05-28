@@ -64,14 +64,9 @@ const NavBar: React.FC<NavItems> = ({
 
   return (
     <header
-      className={`fixed top-0 w-full z-10 ${
-        isScrolled
-          ? ` bg-fixed d bg-cover shadow-lg transition-all duration-300`
-          : ''
-      } `}
+      className={`fixed top-0 w-full z-10 bg-fixed d bg-cover transition-all duration-30 `}
       style={{
-        // backgroundColor: `${isScrolled ? 'red' : ''}`,
-        backgroundImage: `url(${isScrolled ? image : ''})`,
+        backgroundImage: `url( ${image} )`,
       }}
     >
       <nav className="flex items-center justify-between mx-6 h-[3rem] my-4">

@@ -12,7 +12,7 @@ const TechnologyBody = () => {
     setIsPag(num);
   };
   return (
-    <main className="bg-[url('/assets/technology/background-technology-mobile.jpg')]  bg-cover bg-fixed h-[55rem]">
+    <main className="bg-[url('/assets/technology/background-technology-mobile.jpg')]  bg-cover bg-fixed h-screen overflow-y-scroll">
       <section className=" translate-y-[8rem] mb-[-10rem]">
         <article className="flex flex-col items-center justify-center gap-[5rem]">
           <h1 className="text-[16px] tracking-[2px] flex  gap-3">

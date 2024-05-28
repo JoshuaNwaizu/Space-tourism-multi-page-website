@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const HomeBody = () => {
   return (
-    <main className="bg-[url('/assets/home/background-home-mobile.jpg')] bg-no-repeat  bg-cover bg-fixed h-[52rem] max-[375px]:h-[50rem] min-[412px]:h-screen">
+    <main className="bg-[url('/assets/home/background-home-mobile.jpg')] bg-no-repeat  bg-cover bg-fixed h-screen min-[412px]:h-screen overflow-y-scroll">
       <section className=" mx-7 -z-10 translate-y-[8rem] ">
         <article className=" flex flex-col text-center gap-[8rem]  max-[375px]:gap-[6rem]">
           <div className="flex flex-col text-center gap-3">
