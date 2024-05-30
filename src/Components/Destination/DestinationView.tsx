@@ -22,7 +22,7 @@ const DestinationView: React.FC<NavItems> = () => {
         destination="destination"
         crew="crew"
         technology="technology"
-        image="/assets/destination/background-destination-mobile.jpg"
+        image="/assets/destination/background-destination-desktop.jpg"
       />
       <DestinationBody />
     </>

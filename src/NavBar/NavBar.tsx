@@ -64,12 +64,12 @@ const NavBar: React.FC<NavItems> = ({
 
   return (
     <header
-      className={`fixed top-0 w-full z-10 bg-fixed d bg-cover transition-all duration-30 `}
+      className={`fixed top-0 w-full z-10 bg-fixed d bg-cover transition-all duration-30 min-[1100px]:top-[2rem] `}
       style={{
         backgroundImage: `url( ${image} )`,
       }}
     >
-      <nav className="flex items-center justify-between mx-6 h-[3rem] max-[765px]:my-4 min-[1100px]:translate-y-[4rem] ">
+      <nav className="flex items-center justify-between mx-6 h-[3rem] max-[765px]:my-5  min-[768px]:mt-[1.25rem]  ">
         <span className="min-[1100px]:translate-x-11">
           <img
             src="/assets/shared/logo.svg"
@@ -80,7 +80,7 @@ const NavBar: React.FC<NavItems> = ({
           {' '}
         </span>
         <div
-          className={` max-[765px]:absolute max-[765px]:top-0 max-[765px]:backdrop-blur-[40px] max-[765px]: w-[70%] max-[765px]:h-screen max-[765px]:transition-all max-[765px]:duration-300  min-[768px]:py-[2rem] min-[768px]:-mr-6 min-[768px]:w-[85%] min-[768px]:flex min-[768px]:items-center min-[768px]:justify-center min-[768px]:bg-[#FFFFFF0C] min-[768px]:backdrop-blur-[20px] min-[1100px]:w-[60%] ${
+          className={` max-[765px]:absolute max-[765px]:top-0 max-[765px]:backdrop-blur-[40px] max-[765px]: w-[70%] max-[765px]:h-screen max-[765px]:transition-all max-[765px]:duration-300  min-[768px]:py-[2rem] min-[768px]:-mr-6 min-[768px]:w-[85%] min-[768px]:flex min-[768px]:items-center min-[768px]:justify-center min-[768px]:bg-[#FFFFFF0C] min-[768px]:backdrop-blur-[40px] min-[1100px]:w-[60%] ${
             isOpen ? 'right-0 ' : 'right-[-100%]'
           } `}
         >
