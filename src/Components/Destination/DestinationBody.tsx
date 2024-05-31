@@ -52,7 +52,7 @@ const DestinationBody = () => {
   return (
     <main className=" bg-[url('/assets/destination/background-destination-mobile.jpg')]  bg-cover bg-fixed h-[60rem] min-[768px]:bg-[url('/assets/destination/background-destination-tablet.jpg')]  min-[1100px]:h-screen  min-[1100px]:bg-[url('/assets/destination/background-destination-desktop.jpg')]">
       <section className="mx-7 translate-y-[8rem] mb-[-10rem] flex flex-col gap-[3rem] min-[1100px]:translate-y-[10rem]  min-[1100px]:justify-center">
-        <h1 className="text-[16px] uppercase tracking-[2px] flex gap-3 items-center justify-center  min-[768px]:items-start min-[768px]:justify-start  min-[1100px]:ml-[7rem]">
+        <h1 className="text-[16px] uppercase tracking-[2px] flex gap-3 items-center justify-center  min-[768px]:items-start min-[768px]:justify-start min-[768px]:text-[20px] min-[1100px]:ml-[9rem] min-[1300px]:ml-[18rem] min-[1100px]:text-[20px]">
           <span className=" opacity-35">01</span> Pick your Destinations
         </h1>
         <article className="flex flex-col items-center justify-center gap-[3rem]">

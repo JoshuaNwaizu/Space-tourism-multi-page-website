@@ -2,6 +2,7 @@ import CrewBody from './CrewBody';
 // import CrewNav from './CrewNav';
 import NavBar from '../../NavBar/NavBar';
 import React from 'react';
+// import { useState, useEffect } from 'react';
 
 interface NavItems {
   home: string;

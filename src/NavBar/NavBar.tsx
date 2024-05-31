@@ -57,6 +57,7 @@ const NavBar: React.FC<NavItems> = ({
       setIsScrolled(scrollY >= 30);
       setIsOpen(false);
     };
+
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
@@ -64,9 +65,9 @@ const NavBar: React.FC<NavItems> = ({
 
   return (
     <header
-      className={`fixed top-0 w-full z-10 bg-fixed d bg-cover transition-all duration-30 min-[1100px]:top-[2rem] `}
+      className={`fixed top-0 w-full z-10 bg-fixed d bg-cover transition-all duration-30 min-[1100px]:top-[2rem] min-[1100px]:bg-none pb-5 `}
       style={{
-        backgroundImage: `url( ${image} )`,
+        backgroundImage: `url( ${isScrolled && image} )`,
       }}
     >
       <nav className="flex items-center justify-between mx-6 h-[3rem] max-[765px]:my-5  min-[768px]:mt-[1.25rem]  ">
@@ -85,7 +86,7 @@ const NavBar: React.FC<NavItems> = ({
           } `}
         >
           <span
-            className="text-[2.5rem] relative top-[2.1rem] left-[13rem] text-[rgb(208,214,249)] min-[768px]:hidden"
+            className="text-[2.5rem] relative top-[2.1rem] left-[13rem] text-[rgb(208,214,249)] min-[768px]:hidden max-[320px]:left-[10rem]"
             onClick={handleNavToggle}
           >
             <IoCloseSharp />
