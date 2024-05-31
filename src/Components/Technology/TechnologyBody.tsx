@@ -18,7 +18,7 @@ const TechnologyBody = () => {
           <span className="opacity-35">03</span>SPACE LAUNCH 101
         </h1>
         <article className="flex flex-col items-center justify-center gap-[5rem] ">
-          <div className="flex flex-col items-center justify-center gap-[2rem] min-[1100px]:flex-row ">
+          <div className="flex flex-col items-center justify-center gap-[2rem] min-[1100px]:flex-row min-[1100px]:gap-[5rem] ">
             <img
               src={techData.images.landscape}
               alt={techData.name}
@@ -29,29 +29,30 @@ const TechnologyBody = () => {
               alt={techData.name}
               className="w-[477px] h-[230px] min-[768px]:w-[768px] min-[768px]:h-[348px] min-[1100px]:order-1 min-[1100px]:w-[400px] min-[1100px]:h-[450px] max-[768px]:hidden "
             />
-
-            <div className="flex gap-[1rem] min-[1100px]:flex-col min-[1100px]:gap-[2rem]">
-              {numPag.map((_, i) => (
-                <span
-                  className={`flex w-[40px] h-[40px] border-2 items-center justify-center rounded-full min-[768px]:h-[45px] min-[768px]:w-[45px] min-[1100px]:w-[50px] min-[1100px]:h-[50px] ${
-                    isPag === i ? 'bg-[#fff] text-[#0B0D17]' : ''
-                  } `}
-                  onClick={() => handlePaginations(i)}
-                >
-                  {i + 1}
-                </span>
-              ))}
-            </div>
-            <div className="mx-7 flex items-center justify-center flex-col text-center gap-4 min-[1100px]:items-start min-[1100px]:text-left">
-              <h2 className="font-[Bellefair] text-[18px] opacity-50 min-[768px]:text-[24px]">
-                THE TERMINOLOGY…
-              </h2>
-              <h1 className="font-[Bellefair] text-[24px] uppercase min-[768px]:text-[40px]">
-                {techData.name}
-              </h1>
-              <p className=" leading-7 min-[768px]:w-[28rem] min-[1100px]:w-[25rem]">
-                {techData.description}
-              </p>
+            <div className="flex gap-[1rem] flex-col min-[1100px]:flex-row min-[1100px]:gap-[2rem] items-center">
+              <div className="flex gap-[1rem]  min-[1100px]:flex-col min-[1100px]:gap-[2rem]">
+                {numPag.map((_, i) => (
+                  <span
+                    className={`flex w-[40px] h-[40px] cursor-pointer border-2 items-center justify-center  rounded-full min-[768px]:h-[45px] min-[768px]:w-[45px] min-[1100px]:w-[50px] min-[1100px]:h-[50px] ${
+                      isPag === i ? 'bg-[#fff] text-[#0B0D17]' : ''
+                    } `}
+                    onClick={() => handlePaginations(i)}
+                  >
+                    {i + 1}
+                  </span>
+                ))}
+              </div>
+              <div className="mx-7 flex items-center justify-center flex-col text-center gap-4 min-[1100px]:items-start min-[1100px]:text-left">
+                <h2 className="font-[Bellefair] text-[18px] opacity-50 min-[768px]:text-[24px]">
+                  THE TERMINOLOGY…
+                </h2>
+                <h1 className="font-[Bellefair] text-[24px] uppercase min-[768px]:text-[40px]">
+                  {techData.name}
+                </h1>
+                <p className=" leading-7 min-[768px]:w-[28rem] min-[1100px]:w-[25rem]">
+                  {techData.description}
+                </p>
+              </div>
             </div>
           </div>
         </article>

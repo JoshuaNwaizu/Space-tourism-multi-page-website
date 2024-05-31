@@ -31,8 +31,6 @@ const NavBar: React.FC<NavItems> = ({
   const [isScrolled, setIsScrolled] = useState(false);
   const [navPag, setNavPag] = useState<Nav>(0);
 
-  // const bg = isScrolled ? image: ''
-
   const handleNavPag = (num: Nav) => {
     setNavPag(num);
     setIsOpen(!isOpen);
@@ -65,12 +63,12 @@ const NavBar: React.FC<NavItems> = ({
 
   return (
     <header
-      className={`fixed top-0 w-full z-10 bg-fixed d bg-cover transition-all duration-30 min-[1100px]:top-[2rem] min-[1100px]:bg-none pb-5 `}
+      className={`fixed top-0 w-full z-10 bg-fixed d bg-cover transition-all duration-30 min-[1100px]:top-[2rem] min-[1100px]:bg-none min-[1100px]:pb-5 `}
       style={{
         backgroundImage: `url( ${isScrolled && image} )`,
       }}
     >
-      <nav className="flex items-center justify-between mx-6 h-[3rem] max-[765px]:my-5  min-[768px]:mt-[1.25rem]  ">
+      <nav className="flex items-center justify-between mx-6 h-[2.8rem] min-[1100px]:h-[3rem] max-[765px]:my-5  min-[768px]:mt-[1.25rem]  ">
         <span className="min-[1100px]:translate-x-11">
           <img
             src="/assets/shared/logo.svg"
