@@ -16,7 +16,6 @@ interface NavItems {
 const DestinationView: React.FC<NavItems> = () => {
   return (
     <>
-      {/* <DestinationNav /> */}
       <NavBar
         home=""
         destination="destination"

@@ -99,7 +99,7 @@ const NavBar: React.FC<NavItems> = ({
                 {' '}
                 <li
                   className={`text-[#fff] text-[16px]${
-                    navPag === 1 ? 'border-r-4 border-white' : ''
+                    navPag == i ? 'border-r-4 border-white ' : ''
                   }`}
                 >
                   {item.label}

@@ -3,7 +3,6 @@ import HomeView from './Components/Home/HomeView';
 import DestinationView from './Components/Destination/DestinationView';
 import CrewView from './Components/Crew/CrewView';
 import TechnologyView from './Components/Technology/TechnologyView';
-// import DestinationMars from './Components/Destination/DestinationMars';
 
 const App = () => {
   return (
