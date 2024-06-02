@@ -61,7 +61,7 @@ const DestinationBody = () => {
               <img
                 src={destinationData.images.png}
                 alt={'item.description'}
-                className="h-[170px]  animate-up-down min-[768px]:h-[277px]"
+                className="h-[170px] animate-up-down min-[768px]:h-[277px]"
               />
             </figure>
             <div className="flex flex-col items-center justify-center gap-[2rem] min-[768px]:gap-[2rem] min-[768px]:items-center min-[768px]:justify-center">

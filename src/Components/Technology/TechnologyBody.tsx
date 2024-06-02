@@ -14,7 +14,7 @@ const TechnologyBody = () => {
   return (
     <main className="bg-[url('/assets/technology/background-technology-mobile.jpg')]  bg-cover bg-fixed h-[55rem] min-[768px]:bg-[url('/assets/technology/background-technology-tablet.jpg')]  min-[1100px]:bg-[url('/assets/technology/background-technology-desktop.jpg')] min-[1100px]:h-screen">
       <section className=" translate-y-[8rem] mb-[-10rem] flex flex-col gap-[5rem]">
-        <h1 className="text-[16px] tracking-[2px] flex  gap-3 items-center justify-center min-[768px]:justify-start min-[768px]:ml-[2rem] min-[1100px]:ml-[8rem] min-[1300px]:ml-[16rem] min-[768px]:text-[20px]">
+        <h1 className="text-[16px] tracking-[2px] flex  gap-3 items-center justify-center min-[768px]:justify-start min-[768px]:ml-[2rem] min-[1100px]:ml-[8rem] min-[1300px]:ml-[16rem] min-[768px]:text-[20px] ">
           <span className="opacity-35">03</span>SPACE LAUNCH 101
         </h1>
         <article className="flex flex-col items-center justify-center gap-[5rem] ">
