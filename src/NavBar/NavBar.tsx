@@ -68,7 +68,7 @@ const NavBar: React.FC<NavItems> = ({
         backgroundImage: `url( ${isScrolled && image} )`,
       }}
     >
-      <nav className="flex items-center justify-between mx-6 h-[2.8rem] min-[1100px]:h-[3rem] max-[765px]:my-5  min-[768px]:mt-[1.25rem]  ">
+      <nav className="flex items-center justify-between mx-6 h-[2.8rem] min-[1100px]:h-[3rem] max-[765px]:my-6  min-[768px]:mt-[1.25rem]  ">
         <span className="min-[1100px]:translate-x-11">
           <img
             src="/assets/shared/logo.svg"
