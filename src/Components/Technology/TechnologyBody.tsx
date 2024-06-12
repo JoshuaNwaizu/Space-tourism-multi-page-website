@@ -22,12 +22,12 @@ const TechnologyBody = () => {
             <img
               src={techData.images.landscape}
               alt={techData.name}
-              className="w-[477px] h-[230px] min-[768px]:w-[768px] min-[768px]:h-[348px] min-[1100px]:order-1 min-[801px]:hidden"
+              className="w-[477px] h-[230px] min-[768px]:w-[768px] min-[768px]:h-[348px] min-[1100px]:order-1 min-[800px]:hidden"
             />
             <img
               src={techData.images.portrait}
               alt={techData.name}
-              className="w-[477px] h-[230px] min-[768px]:w-[768px] min-[768px]:h-[348px] min-[1100px]:order-1 min-[1100px]:w-[400px] min-[1100px]:h-[450px] max-[768px]:hidden "
+              className="w-[477px] h-[230px] min-[768px]:w-[100svw] min-[768px]:h-[378px] min-[1100px]:order-1 min-[1100px]:w-[400px] min-[1100px]:h-[450px] min-[844px]:w-[800px] max-[768px]:hidden "
             />
             <div className="flex gap-[1rem] flex-col min-[1100px]:flex-row min-[1100px]:gap-[2rem] items-center">
               <div className="flex gap-[1rem]  min-[1100px]:flex-col min-[1100px]:gap-[2rem]">

@@ -36,8 +36,8 @@ const CrewBody = () => {
               </p>
             </span>
 
-            <div className="flex items-center flex-col justify-center gap-8 ">
-              <div className="flex flex-row gap-7  min-[768px]:gap-[1.2rem]">
+            <div className="flex flex-col items-center justify-center gap-8 ">
+              <div className="flex flex-row gap-4  min-[768px]:gap-[1.2rem]">
                 {pagination.map((_, i) => (
                   <div
                     key={i}
