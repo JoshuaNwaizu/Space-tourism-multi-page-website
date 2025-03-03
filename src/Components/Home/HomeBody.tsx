@@ -22,7 +22,7 @@ const HomeBody = () => {
           <div className="flex items-center justify-center">
             <Link to={'destination'}>
               <span className="bg-[#fff] w-[9.5rem] h-[9.5rem] flex items-center justify-center font-[Bellefair] rounded-full text-[18px] tracking-[2px] text-[#0B0D17] uppercase animate-up-down min-[768px]:w-[17rem] min-[768px]:h-[17rem] min-[768px]:text-[32px]">
-                Explore
+                Blast Off
               </span>
             </Link>
           </div>
